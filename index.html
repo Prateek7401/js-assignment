@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="example.js"></script>
+    <title>JavaScript Assignment</title>
+</head>
+<body>
+<script>
+    document.body.style.backgroundColor="lightgrey";
+        document.body.style.color="red";
+        document.body.style.fontSize="20px";
+        document.body.style.textAlign="center";
+
+    var date =new Date();
+    var day= date.getDate();
+    var month=date.getMonth()+1;
+    var year =date.getFullYear();
+    document.write("Today Date:"+0+day+"/"+0+month+"/"+year);
+    var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    var day = weekday[date.getDay()];
+    document.write("<br>Today Day:"+day);
+
+    document.body.style.backgroundColor="lightgrey";
+        document.body.style.color="red";
+        document.body.style.fontSize="20px";
+        document.body.style.textAlign="center";
+        document.body.style.justifyContent="center";
+        document.body.style.border="20px solid black";
+        document.body.style.margin="250px";
+
+        
+
+         var fname=prompt("Enter your first name");
+         var lname=prompt("Enter your last name");
+         document.write("<br>My full name is :"+fname+" "+lname);
+
+
+
+         const num1 = parseInt(prompt('Entre the first number'));
+        const num2 = parseInt(prompt('Entre the second number'));
+        const sum = num1+num2;
+        document.write(`<br>The sum of ${num1} and ${num2} is ${sum}`);
+        const multiplication = num1*num2;
+        document.write(`<br>The multiplication of ${num1} and ${num2} is ${multiplication}`);
+        const subtraction = num1-num2;
+        document.write(`<br>The subtraction of ${num1} and ${num2} is ${subtraction}`);
+        const division = num1/num2;
+        document.write(`<br>The division of ${num1} and ${num2} is ${division}`);
+
+
+    </script> 
+</body>
+</html>
